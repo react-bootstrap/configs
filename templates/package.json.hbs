@@ -1,0 +1,61 @@
+{
+  "name": "{{name}}",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "repository": {
+    "type": "git"
+  },
+  "author": "{{author}}",
+  "license": "MIT",
+  "scripts": {
+    "tdd": "jest --watch",
+    "test": "npm run lint && jest",
+    "testonly": "jest",
+    "build:es": "babel src -d es --env-name esm --delete-dir-on-start",
+    "build:lib": "babel src -d lib  --delete-dir-on-start",
+    "build": "npm run build:lib && npm run build:es",
+    "prepublishOnly": "yarn run build",
+    "lint": "eslint . && prettier --list-different '**/*.{js,json,css,md}'",
+    "format": "eslint . --fix && prettier --write '**/*.{js,json,css,md}'",
+    "precommit": "lint-staged"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "prettier --write", "git add"],
+    "*.{json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "roots": ["<rootDir>/test"]
+  },
+  "devDependencies": {
+    "eslint": "^5.0.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@react-bootstrap/babel-preset": "^1.0.0",
+    "@react-bootstrap/eslint-preset": "^1.0.0",
+
+    "babel-eslint": "^9.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.14.2",
+    "jest": "^23.5.0"
+  }
+}

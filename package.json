@@ -1,0 +1,27 @@
+{
+  "name": "@react-bootstrap/configs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/react-bootstrap/configs.git",
+  "author": "Jason Quense <monastic.panic@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "plop": "plop"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "execa": "^1.0.0",
+    "git-remote-origin-url": "^2.0.0",
+    "lerna": "^3.3.2",
+    "npm-name": "^5.0.0",
+    "plop": "^2.1.0"
+  }
+}
