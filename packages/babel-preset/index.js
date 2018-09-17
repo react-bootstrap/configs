@@ -23,7 +23,7 @@ module.exports = (
 ) => ({
   presets: [
     [
-      '@babel/preset-env',
+      require('@babel/preset-env'),
       {
         modules,
         loose: true,
@@ -35,17 +35,17 @@ module.exports = (
         },
       },
     ],
-    ['@babel/preset-react', { development: dev }],
+    [require('@babel/preset-react'), { development: dev }],
   ],
   plugins: [
-    ['@babel/plugin-proposal-class-properties', { loose: true }],
-    '@babel/plugin-proposal-export-default-from',
-    '@babel/plugin-proposal-export-namespace-from',
-    ['@babel/plugin-transform-runtime', { useESModules: !modules }],
-    'babel-plugin-dev-expression',
-    modules && 'babel-plugin-add-module-exports',
+    [require('@babel/plugin-proposal-class-properties'), { loose: true }],
+    require('@babel/plugin-proposal-export-default-from'),
+    require('@babel/plugin-proposal-export-namespace-from'),
+    [require('@babel/plugin-transform-runtime'), { useESModules: !modules }],
+    require('babel-plugin-dev-expression'),
+    modules && require('babel-plugin-add-module-exports'),
     removePropTypes && [
-      'transform-react-remove-prop-types',
+      require('babel-plugin-transform-react-remove-prop-types'),
       {
         removeImport: true,
         additionalLibraries: ['prop-types-extra'],
