@@ -1,3 +1,11 @@
+const presetEnv = require('@babel/preset-env');
+const presetReact = require('@babel/preset-react');
+const classProperties = require('@babel/plugin-proposal-class-properties');
+const exportDefaultFrom = require('@babel/plugin-proposal-export-default-from');
+const exportNamespaceFrom = require('@babel/plugin-proposal-export-namespace-from');
+const runtime = require('@babel/plugin-transform-runtime');
+const rmPropTypes = require('babel-plugin-transform-react-remove-prop-types');
+
 // https://github.com/twbs/bootstrap/blob/6cf8700fd9fd096855d6510ceef9c1ff225f8e40/.browserslistrc
 const browserlist = [
   '>= 1%',
@@ -23,7 +31,7 @@ module.exports = (
 ) => ({
   presets: [
     [
-      require('@babel/preset-env'),
+      presetEnv,
       {
         modules,
         loose: true,
@@ -35,17 +43,17 @@ module.exports = (
         },
       },
     ],
-    [require('@babel/preset-react'), { development: dev }],
+    [presetReact, { development: dev }],
   ],
   plugins: [
-    [require('@babel/plugin-proposal-class-properties'), { loose: true }],
-    require('@babel/plugin-proposal-export-default-from'),
-    require('@babel/plugin-proposal-export-namespace-from'),
-    [require('@babel/plugin-transform-runtime'), { useESModules: !modules }],
+    [classProperties, { loose: true }],
+    exportDefaultFrom,
+    exportNamespaceFrom,
+    [runtime, { useESModules: !modules }],
     require('babel-plugin-dev-expression'),
     modules && require('babel-plugin-add-module-exports'),
     removePropTypes && [
-      require('babel-plugin-transform-react-remove-prop-types'),
+      rmPropTypes,
       {
         removeImport: true,
         additionalLibraries: ['prop-types-extra'],
