@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/babel-preset@1.1.1...@react-bootstrap/babel-preset@1.1.2) (2018-09-17)
+
+
+### Bug Fixes
+
+* really remove the inline requires ([d502d99](https://github.com/react-bootstrap/configs/commit/d502d99))
+
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/babel-preset@1.1.0...@react-bootstrap/babel-preset@1.1.1) (2018-09-17)
 
