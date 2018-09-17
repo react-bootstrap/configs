@@ -42,9 +42,10 @@ module.exports = {
       'error',
       {
         vars: 'all',
+        varsIgnorePattern: '^_',
         args: 'after-used',
-        varsIgnorePattern: '^_\\d?$',
-        argsIgnorePattern: '^_\\d?$',
+        ignoreRestSiblings: false,
+        argsIgnorePattern: '^_',
       },
     ],
 
