@@ -5,7 +5,8 @@ const exportDefaultFrom = require('@babel/plugin-proposal-export-default-from');
 const exportNamespaceFrom = require('@babel/plugin-proposal-export-namespace-from');
 const runtime = require('@babel/plugin-transform-runtime');
 const rmPropTypes = require('babel-plugin-transform-react-remove-prop-types');
-
+const devExpression = require('babel-plugin-dev-expression');
+const addExports = require('babel-plugin-add-module-exports');
 // https://github.com/twbs/bootstrap/blob/6cf8700fd9fd096855d6510ceef9c1ff225f8e40/.browserslistrc
 const browserlist = [
   '>= 1%',
@@ -50,8 +51,8 @@ module.exports = (
     exportDefaultFrom,
     exportNamespaceFrom,
     [runtime, { useESModules: !modules }],
-    require('babel-plugin-dev-expression'),
-    modules && require('babel-plugin-add-module-exports'),
+    devExpression,
+    modules && addExports,
     removePropTypes && [
       rmPropTypes,
       {
