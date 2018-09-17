@@ -32,43 +32,6 @@ module.exports = {
     'no-restricted-globals': ['error', ...restrictedGlobals],
     'no-underscore-dangle': 'off',
     'prefer-destructuring': 'off',
-    'jsx-a11y/no-noninteractive-element-interactions': 'off',
-    'jsx-a11y/anchor-is-valid': 'off',
-    'jsx-a11y/click-events-have-key-events': 'off',
-    'jsx-a11y/mouse-events-have-key-events': 'off',
-    'jsx-a11y/label-has-for': [
-      'error',
-      { required: { some: ['nesting', 'id'] } },
-    ],
-    'react/forbid-prop-types': 'off',
-    'react/jsx-boolean-value': 'error',
-    'react/jsx-no-duplicate-props': 'error',
-    'react/no-find-dom-node': 'off',
-    'react/no-array-index-key': 'off',
-    'react/no-string-refs': 'off',
-    'react/prefer-stateless-function': 'off',
-    'react/destructuring-assignment': 'off',
-    'react/default-props-match-prop-types': 'off',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/forbid-foreign-prop-types': 'off',
-    'import/no-named-as-default-member': 'off',
-    'react/jsx-filename-extension': [
-      'error',
-      {
-        extensions: ['.js'],
-      },
-    ],
-    'react/prop-types': [
-      'error',
-      {
-        ignore: ['children', 'className', 'style'],
-      },
-    ],
-    'react/require-default-props': 'off',
-    'import/no-extraneous-dependencies': [
-      'error',
-      { devDependencies: ['!src/**/*.js'] },
-    ],
     'no-restricted-syntax': [
       'error',
       'ForOfStatement',
@@ -84,6 +47,48 @@ module.exports = {
         argsIgnorePattern: '^_\\d?$',
       },
     ],
+
+    'import/no-named-as-default-member': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['!src/**/*.js'] },
+    ],
+
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/mouse-events-have-key-events': 'off',
+    'jsx-a11y/label-has-for': [
+      'error',
+      { required: { some: ['nesting', 'id'] } },
+    ],
+
+    'react/no-did-update-set-state': 'off',
+    'react/no-multi-comp': 'off',
+    'react/forbid-prop-types': 'off',
+    'react/jsx-boolean-value': 'error',
+    'react/jsx-no-duplicate-props': 'error',
+    'react/no-find-dom-node': 'off',
+    'react/no-array-index-key': 'off',
+    'react/no-string-refs': 'off',
+    'react/prefer-stateless-function': 'off',
+    'react/destructuring-assignment': 'off',
+    'react/default-props-match-prop-types': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/forbid-foreign-prop-types': 'off',
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['.js'],
+      },
+    ],
+    'react/prop-types': [
+      'error',
+      {
+        ignore: ['children', 'className', 'style'],
+      },
+    ],
+    'react/require-default-props': 'off',
   },
   overrides: [
     {
