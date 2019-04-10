@@ -12,7 +12,7 @@ const browserlist = [
   '>= 1%',
   'last 1 major version',
   'not dead',
-  'Chrome >= 45',
+  'Chrome >= 41',
   'Firefox >= 38',
   'Edge >= 12',
   'Explorer >= 10',
