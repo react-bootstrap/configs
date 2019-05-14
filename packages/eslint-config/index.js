@@ -9,7 +9,7 @@ module.exports = {
     __DEV__: false,
   },
   parser: 'babel-eslint',
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   rules: {
     'max-len': 'off',
     'no-plusplus': 'off',
@@ -63,7 +63,8 @@ module.exports = {
       'error',
       { required: { some: ['nesting', 'id'] } },
     ],
-
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'react/no-did-update-set-state': 'off',
     'react/no-multi-comp': 'off',
     'react/forbid-prop-types': 'off',
