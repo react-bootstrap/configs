@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config@1.1.1...@react-bootstrap/eslint-config@1.2.0) (2019-05-14)
+
+
+### Features
+
+* add react hooks linting ([e77024d](https://github.com/react-bootstrap/configs/commit/e77024d))
+
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config@1.1.0...@react-bootstrap/eslint-config@1.1.1) (2018-09-17)
 
