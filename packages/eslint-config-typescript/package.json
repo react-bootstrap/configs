@@ -1,0 +1,32 @@
+{
+  "name": "@react-bootstrap/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "eslint typescript config",
+  "author": "Jason Quense <monastic.panic@gmail.com>",
+  "homepage": "https://github.com/react-bootstrap/configs#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-bootstrap/configs.git"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^1.13.0",
+    "babel-eslint": "^10.0.2",
+    "eslint-import-resolver-typescript": "^1.1.1"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
