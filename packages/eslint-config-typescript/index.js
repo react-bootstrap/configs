@@ -1,4 +1,5 @@
 module.exports = {
+  extends: 'plugin:@typescript-eslint/eslint-recommended',
   settings: {
     'import/extensions': ['.js', '.ts', '.tsx'],
     'import/parsers': {
@@ -15,22 +16,19 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
-      parser: require.resolve('@typescript-eslint/parser'),
-      parserOptions: {
-        sourceType: 'module',
-      },
-      plugins: ['@typescript-eslint'],
-      // eslint-disable-next-line global-require
+      files: ['*.ts', '*.tsx'],
+      extends: 'plugin:@typescript-eslint/recommended',
       rules: require('./rules'),
     },
     {
-      files: ['**/*.d.ts'],
+      files: ['*.d.ts'],
       rules: {
-        'import/no-duplicates': 'off',
         'import/export': 'off',
-        // this isn't needed in a type def
+        'import/no-duplicates': 'off',
+        'max-classes-per-file': 'off',
+        // This isn't needed in a type def.
         'react/prefer-stateless-function': 'off',
+        'react/static-property-placement': 'off',
       },
     },
   ],

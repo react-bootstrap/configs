@@ -17,16 +17,16 @@
     "url": "git+https://github.com/react-bootstrap/configs.git"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^1.13.0",
+    "@typescript-eslint/parser": "^2.4.0",
     "babel-eslint": "^10.0.2",
-    "eslint-import-resolver-typescript": "^1.1.1"
+    "eslint-import-resolver-typescript": "^2.0.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "eslint-plugin-import": "^2.18.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
     "eslint-plugin-import": "^2.18.2"
   }
 }
