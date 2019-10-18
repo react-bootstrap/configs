@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config@1.2.0...@react-bootstrap/eslint-config@1.3.0) (2019-10-18)
+
+
+### Features
+
+* upgrade deps ([f22f086](https://github.com/react-bootstrap/configs/commit/f22f086eda919c0fcc22d507da569c0d0b87be20))
+
+
+
+
+
 # [1.2.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config@1.1.1...@react-bootstrap/eslint-config@1.2.0) (2019-05-14)
 
 
