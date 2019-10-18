@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config@1.3.0...@react-bootstrap/eslint-config@1.3.1) (2019-10-18)
+
+
+### Bug Fixes
+
+* turn off bad rules ([c615dc2](https://github.com/react-bootstrap/configs/commit/c615dc276373763e38e6f97b499338a96d878b3f))
+
+
+
+
+
 # [1.3.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config@1.2.0...@react-bootstrap/eslint-config@1.3.0) (2019-10-18)
 
 
