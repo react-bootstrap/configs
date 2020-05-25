@@ -18,7 +18,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
-    "execa": "^3.2.0",
+    "execa": "^4.0.2",
     "git-remote-origin-url": "^3.0.0",
     "lerna": "^3.18.1",
     "npm-name": "^5.5.0",
