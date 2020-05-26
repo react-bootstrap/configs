@@ -21,7 +21,7 @@
     "execa": "^4.0.2",
     "git-remote-origin-url": "^3.0.0",
     "lerna": "^3.18.1",
-    "npm-name": "^5.5.0",
+    "npm-name": "^6.0.0",
     "plop": "^2.5.2"
   }
 }
