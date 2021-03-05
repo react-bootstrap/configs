@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config-typescript@2.0.0...@react-bootstrap/eslint-config-typescript@2.0.1) (2021-03-05)
+
+**Note:** Version bump only for package @react-bootstrap/eslint-config-typescript
+
+
+
+
+
+
 # [2.0.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config-typescript@1.2.0...@react-bootstrap/eslint-config-typescript@2.0.0) (2020-05-22)
 
 

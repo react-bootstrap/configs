@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/babel-preset@1.2.0...@react-bootstrap/babel-preset@2.0.0) (2021-03-05)
+
+
+* feat!: enable new jsx transform and update browserslist ([280886c](https://github.com/react-bootstrap/configs/commit/280886c7316b7c4b978bd2264f022f67e21e0126))
+
+
+### BREAKING CHANGES
+
+* enable new jsx transform and update browser list for v5
+
+
+
+
+
+
 # [1.2.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/babel-preset@1.1.3...@react-bootstrap/babel-preset@1.2.0) (2019-10-18)
 
 
