@@ -1,7 +1,7 @@
 const restrictedGlobals = require('./globals');
 
 module.exports = {
-  extends: ['eslint-config-airbnb', 'prettier', 'prettier/react'],
+  extends: ['eslint-config-airbnb', 'prettier'],
   env: {
     browser: true,
   },
