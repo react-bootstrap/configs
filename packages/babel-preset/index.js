@@ -14,11 +14,9 @@ const browserlist = [
   'not dead',
   'Chrome >= 60',
   'Firefox >= 60',
-  'not Edge < 79',
   'Firefox ESR',
-  'iOS >= 10',
-  'Safari >= 10',
-  'Android >= 6',
+  'iOS >= 12',
+  'Safari >= 12',
   'not Explorer <= 11',
 ];
 
