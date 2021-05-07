@@ -17,6 +17,7 @@
     "@babel/preset-react": "^7.12.13",
     "babel-plugin-add-module-exports": "^1.0.4",
     "babel-plugin-dev-expression": "^0.2.2",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-preset-env-modules": "^1.0.1"
   }
 }
