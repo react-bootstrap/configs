@@ -34,7 +34,6 @@ module.exports = (
         modules,
         ignoreBrowserslistConfig: true,
         targets: {
-          esmodules: true,
           browsers: browserlist,
         },
       },
