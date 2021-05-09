@@ -1,4 +1,3 @@
-const presetEnv = require('@babel/preset-env');
 const presetReact = require('@babel/preset-react');
 const classProperties = require('@babel/plugin-proposal-class-properties');
 const exportDefaultFrom = require('@babel/plugin-proposal-export-default-from');
@@ -30,13 +29,10 @@ module.exports = (
 ) => ({
   presets: [
     [
-      presetEnv,
+      'babel-preset-env-modules',
       {
         modules,
-        loose: true,
         ignoreBrowserslistConfig: true,
-        shippedProposals: true,
-        include: ['proposal-object-rest-spread'],
         targets: {
           browsers: browserlist,
         },
