@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/babel-preset@2.0.0...@react-bootstrap/babel-preset@2.1.0) (2021-05-17)
+
+
+### Features
+
+* update browser list ([#34](https://github.com/react-bootstrap/configs/issues/34)) ([7554705](https://github.com/react-bootstrap/configs/commit/7554705baeb785b40d41feac1d18100eeb56371b))
+* use babel-preset-env-modules ([d5c51d5](https://github.com/react-bootstrap/configs/commit/d5c51d5ac7313f044318cd9ab9a8b4c294d524bf))
+
+
+
+
+
 # [2.0.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/babel-preset@1.2.0...@react-bootstrap/babel-preset@2.0.0) (2021-03-05)
 
 
