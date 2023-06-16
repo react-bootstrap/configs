@@ -8,7 +8,13 @@ module.exports = {
   globals: {
     __DEV__: false,
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@babel/preset-react']
+    }
+  },
   plugins: ['react', 'react-hooks'],
   rules: {
     'max-len': 'off',
