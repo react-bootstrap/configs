@@ -1,11 +1,3 @@
-const presetReact = require('@babel/preset-react');
-const classProperties = require('@babel/plugin-proposal-class-properties');
-const exportDefaultFrom = require('@babel/plugin-proposal-export-default-from');
-const exportNamespaceFrom = require('@babel/plugin-proposal-export-namespace-from');
-const runtime = require('@babel/plugin-transform-runtime');
-const rmPropTypes = require('babel-plugin-transform-react-remove-prop-types');
-const devExpression = require('babel-plugin-dev-expression');
-const addExports = require('babel-plugin-add-module-exports');
 // https://github.com/twbs/bootstrap/blob/main/.browserslistrc
 const browserlist = [
   '>= 0.5%',
@@ -25,6 +17,8 @@ module.exports = (
     dev = false,
     removePropTypes = !dev,
     modules = _.env() === 'esm' ? false : 'commonjs',
+    setUseClient = false,
+    customClientImports,
   } = {},
 ) => ({
   presets: [
@@ -38,20 +32,26 @@ module.exports = (
         },
       },
     ],
-    [presetReact, { development: dev, runtime: 'automatic' }],
+    ['@babel/preset-react', { development: dev, runtime: 'automatic' }],
   ],
   plugins: [
-    [classProperties, { loose: true }],
-    exportDefaultFrom,
-    exportNamespaceFrom,
-    [runtime, { useESModules: !modules }],
-    devExpression,
-    modules && addExports,
+    ['@babel/plugin-proposal-class-properties', { loose: true }],
+    '@babel/plugin-proposal-export-default-from',
+    '@babel/plugin-proposal-export-namespace-from',
+    ['@babel/plugin-transform-runtime', { useESModules: !modules }],
+    'babel-plugin-dev-expression',
+    modules && 'babel-plugin-add-module-exports',
     removePropTypes && [
-      rmPropTypes,
+      'babel-plugin-transform-react-remove-prop-types',
       {
         removeImport: true,
         additionalLibraries: ['prop-types-extra'],
+      },
+    ],
+    setUseClient && [
+      'babel-plugin-transform-next-use-client',
+      {
+        customClientImports,
       },
     ],
   ].filter(Boolean),
