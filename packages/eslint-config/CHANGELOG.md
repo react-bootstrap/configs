@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config@2.0.0...@react-bootstrap/eslint-config@3.0.0) (2023-06-27)
+
+
+* feat(eslint-config)!: remove babel-eslint and update deps (#45) ([099ed56](https://github.com/react-bootstrap/configs/commit/099ed5614f4dbe31fd133c0ab4e9f0fc3cdf192c)), closes [#45](https://github.com/react-bootstrap/configs/issues/45)
+
+
+### BREAKING CHANGES
+
+* Replace babel-eslint with @babel/eslint-parser
+
+
+
+
+
 # [2.0.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/eslint-config@1.3.2...@react-bootstrap/eslint-config@2.0.0) (2021-03-05)
 
 
