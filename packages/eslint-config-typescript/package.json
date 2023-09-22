@@ -19,7 +19,7 @@
   "dependencies": {
     "@typescript-eslint/parser": "^4.0.1",
     "babel-eslint": "^10.0.2",
-    "eslint-import-resolver-typescript": "^2.0.0"
+    "eslint-import-resolver-typescript": "^3.6.1"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.0.0",
