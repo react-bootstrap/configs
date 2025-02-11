@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/babel-preset@2.2.0...@react-bootstrap/babel-preset@2.3.0) (2025-02-11)
+
+
+### Features
+
+* **babel-preset:** update deps ([8cf3c21](https://github.com/react-bootstrap/configs/commit/8cf3c21ae2cf6ef5bd2ea0ec814e8f1cdaae096b))
+
+
+
+
+
 # [2.2.0](https://github.com/react-bootstrap/configs/compare/@react-bootstrap/babel-preset@2.0.0...@react-bootstrap/babel-preset@2.2.0) (2023-06-27)
 
 
