@@ -35,9 +35,9 @@ module.exports = (
     ['@babel/preset-react', { development: dev, runtime: 'automatic' }],
   ],
   plugins: [
-    ['@babel/plugin-proposal-class-properties', { loose: true }],
+    ['@babel/plugin-transform-class-properties', { loose: true }],
     '@babel/plugin-proposal-export-default-from',
-    '@babel/plugin-proposal-export-namespace-from',
+    '@babel/plugin-transform-export-namespace-from',
     ['@babel/plugin-transform-runtime', { useESModules: !modules }],
     'babel-plugin-dev-expression',
     modules && 'babel-plugin-add-module-exports',

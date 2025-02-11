@@ -23,5 +23,6 @@
     "lerna": "^3.22.1",
     "npm-name": "^6.0.1",
     "plop": "^2.7.6"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
